@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    text-align: right;
+
+    .nav {
+        @apply hidden md:flex;
+    }
+
+    .progress-bar {
+        @apply absolute z-30 h-2 inset-0 bg-blue-500 origin-[0];
+    }
+
+    .hero-section {
+        @apply px-4 pt-60 pb-28 bg-white dark:bg-slate-800;
+
+        .tremor-TextInput-root {
+            @apply max-w-4xl p-3;
+        }
+    }
+
+    .main-section {
+        @apply max-w-[1600px] mx-auto p-6 lg:p-8 bg-slate-50 dark:bg-slate-900 dark:bg-opacity-60;
+
+        .products-wrapper {
+            @apply gap-6;
+    
+            .product-card {
+                .bookmark-btn {
+                    svg {
+                        @apply m-0;
+                    }
+                }
+
+                .meta {
+                    @apply hidden;
+    
+                }
+    
+                &:hover {
+                    .meta {
+                        @apply block;
+                    }
+                }
+            }
+        }
+    }
+
+}
