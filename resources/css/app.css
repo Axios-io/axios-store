@@ -11,6 +11,10 @@ body {
         @apply hidden md:flex;
     }
 
+    .progress-bar {
+        @apply absolute z-30 h-2 inset-0 bg-blue-500 origin-[0];
+    }
+
     .hero-section {
         @apply px-4 pt-60 pb-28 bg-white dark:bg-slate-800;
 
